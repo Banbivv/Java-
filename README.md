@@ -17,9 +17,9 @@ PC 类 要求 setCPU(CPU c)将参数 c 的值赋值给 cpu，要求 setHardDisk(
 （5） pc 调用 setHardDisk(HardDisk h)方法，调用时实参是 disk;
 （6） pc 调用 show()方法。
 ##实验结果
+
 package CPU;
 public class CPU {
-
 public int speed;
 public void setSpeed(int m){ 
 speed=m;
@@ -30,11 +30,9 @@ return speed;
 }
 
 package HardDisk;
-
 public class HardDisk {
 int count;
 public String amount;
-
 public void setAmount(int m){
 count=m;
 }
@@ -44,10 +42,8 @@ return count;
 }
 
 package PC;
-
 import CPU.CPU;
 import HardDisk.HardDisk;
-
 public class PC {
  CPU cpu;
  HardDisk hd;
@@ -60,15 +56,12 @@ public class PC {
  public void show() {
   System.out.println("CPU speed"+cpu.speed+"\nHardDisk amount"+hd.amount);
  }
- 
- 
-}
-package Test;
+ }
 
+package Test;
 import CPU.CPU;
 import HardDisk.HardDisk;
 import PC.PC;
-
 public class Test {
 public static void main(String args[]){
 CPU cpu=new CPU();
